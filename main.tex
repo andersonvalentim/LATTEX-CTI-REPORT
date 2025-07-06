@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Relatório de CTI}
+\lhead{ACV Tecnologia}
+\rfoot{\thepage}
+\cfoot{TLP: AMBER \quad |\quad Página \thepage}
+% Altere aqui o nível do TLP conforme necessário: WHITE / GREEN / AMBER / RED
+% --------------------------------------------------------
+\title{\textbf{Modelo de Relatório de Cyber Threat Intelligence (CTI)}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\hrule
+\vspace{0.5cm}
+
+\section{Identificação do Relatório}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{ID do Relatório:} CTI-AAAA-MM-\#\#\#
+    \item \textbf{Classificação da Informação:} [Público / Restrito / Confidencial / TLP:WHITE/AMBER/RED]
+    \item \textbf{Data do Relatório:} DD/MM/AAAA
+    \item \textbf{Autor(es):} Nome(s) / Equipe
+    \item \textbf{Contato:} Email ou canal seguro
+\end{itemize}
+
+\section{Resumo Executivo}
+Breve descrição do incidente, campanha ou ameaça analisada, em linguagem acessível a executivos e stakeholders não técnicos.
+
+\textit{Exemplo:} Identificamos uma campanha de phishing visando setores de agro negócio do Brasil, associada ao grupo TA505.
+
+\section{Descrição Técnica}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Ameaça Observada:} [Malware, Phishing, APT, Ransomware etc.]
+    \item \textbf{Data/Hora da Detecção:} 
+    \item \textbf{Vetores de Ataque:} 
+    \item \textbf{Alvos Potenciais/Afetados:} 
+    \item \textbf{Indicadores de Comprometimento (IOCs):}
+    \begin{itemize}
+        \item IPs:
+        \item Domínios:
+        \item Hashes:
+        \item URLs:
+        \item Regras YARA/Sigma:
+    \end{itemize}
+    \item \textbf{Técnicas, Táticas e Procedimentos (TTPs):} (MITRE ATT\&CK)
+\end{itemize}
+
+\section{Análise de Atribuição (se aplicável)}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Possível Grupo Ator:} 
+    \item \textbf{Motivação Provável:} [Financeira / Espionagem / Hacktivismo / etc.]
+    \item \textbf{Evidências da Atribuição:} 
+\end{itemize}
+
+\section{Avaliação de Impacto}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Impacto Potencial:} 
+    \item \textbf{Probabilidade de Ocorrência:} [Alta / Média / Baixa]
+    \item \textbf{Relevância para o Negócio:} 
+\end{itemize}
+
+\section{Recomendações}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Ações de Contenção e Mitigação:} 
+    \item \textbf{Correções Necessárias:} 
+    \item \textbf{Boas Práticas e Lições Aprendidas:} 
+    \item \textbf{Sugestão de Bloqueios:} (IP, domínio, etc.)
+\end{itemize}
+
+\section{Anexos}
+\begin{itemize}[leftmargin=*]
+    \item Logs
+    \item Capturas de Tela
+    \item Fluxogramas
+    \item Arquivos PCAP
+    \item Referências externas (CVE, links OSINT, etc.)
+\end{itemize}
+
+\section{TLP e Política de Compartilhamento}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Nível TLP Aplicado:} 
+    \item \textbf{Permissões de Redistribuição:} 
+    \item \textbf{Orientações para Compartilhamento Controlado:} 
+\end{itemize}
+
+\end{document}
