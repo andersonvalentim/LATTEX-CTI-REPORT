@@ -64,8 +64,8 @@ O modelo é organizado nas seguintes seções:
 
 1. **Clone o repositório:**
 ```bash
-git clone https://github.com/seu-usuario/cti-report-template.git
-cd cti-report-template
+git clone https://github.com/andersonvalentim/LATTEX-CTI-REPORT.git
+cd LATTEX-CTI-REPORT
 ```
 
 2. **Compile o documento:**
